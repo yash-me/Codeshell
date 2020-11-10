@@ -15,7 +15,8 @@ import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
-
+import QierPlayer from 'qier-player';
+import ll from './ll.mkv';
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -54,13 +55,13 @@ const Result = () => {
                     Video Lesson
                 </Button>
                 <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
-                    <AppBar className={classes.appBar}>
+                    <AppBar  style={{backgroundColor:"#5A4591"}}>
                     <Toolbar>
                         <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
                         <CloseIcon />
                         </IconButton>
                         <Typography variant="h6" className={classes.title}>
-                        
+                            Linked List
                         </Typography>
                     
                     </Toolbar>
@@ -71,7 +72,11 @@ const Result = () => {
                     </ListItem>
                     <Divider />
                     <ListItem button>
-                        <ListItemText primary="Default notification ringtone" secondary="Tethys" />
+                        
+                        <QierPlayer 
+                        width="100%"
+                        height={620}
+                        srcOrigin={ll} />
                     </ListItem>
                     </List>
                 </Dialog>

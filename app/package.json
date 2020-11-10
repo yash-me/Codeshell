@@ -11,6 +11,7 @@
         "@testing-library/user-event": "12.1.7",
         "axios": "0.20.0",
         "codemirror": "5.57.0",
+        "qier-player": "^1.2.10",
         "react": "16.13.1",
         "react-codemirror2": "7.2.1",
         "react-dom": "16.13.1",
