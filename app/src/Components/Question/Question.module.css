@@ -1,0 +1,163 @@
+/* .down {
+    position: fixed;
+    color: white;
+    z-index: 2;
+} */
+
+.code {
+    height: 93.6%;
+}
+.run {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #332b4b;
+}
+
+.submit {
+    color: white;
+    border-radius: 0.4rem;
+    width: 5rem;
+    height: 2rem;
+    padding: 4px 7px;
+    background: linear-gradient(90deg,#5f5679, #694acf);
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+
+.toogle {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    margin-right: 1rem;
+    padding: 0.8rem;
+    width: 12rem;
+    background-color: #342B4C;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.active {
+    cursor: pointer;
+    color: white;
+    border-radius: 0.4rem;
+    padding: 2px 7px;
+    background: linear-gradient(90deg, #342B4C, #1c67da);
+}
+.normal {
+    padding: 2px 7px;
+    border-radius: 0.4rem;
+    color: #aeb7e3;
+    background-color: #4e567a;
+}
+
+.heading {
+    font-family: "Montserrat", sans-serif;
+    color: #aeb7e4;
+    padding-left: 1rem;
+    font-size: 17px;
+}
+
+.leftPannelContainer{
+
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow-y: hidden;
+    height: calc(100vh - 102px);
+    padding: 15px 35px 100px;
+    overflow-y: scroll;
+}
+
+.problemStatement{
+
+    display: flex;
+    flex-direction: column;
+    font-family: Muli,sans-serif;
+    margin-top: 1em;
+}
+
+.problemName{
+
+    font-size: 18px;
+    color: #161d2d;
+    letter-spacing: .44px;
+    font-weight: 800;
+    font-family: Muli,sans-serif;
+    display: block;
+}
+
+.problemDescription{
+
+    padding-top: 30px;
+    display: block;
+}
+
+.doubt{
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+    
+}
+
+h4.question{
+
+    font-size: 13px;
+    font-weight: 400;
+    color: #626262;
+    letter-spacing: .3px;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+
+pre{
+
+    margin: 10px 0 20px;
+    color: #000;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.06);
+    border-radius: 4px;
+    padding: 15px 18px;
+    font-weight: 600;
+    overflow-x: hidden;
+    max-width: 866px;
+    white-space: pre-wrap;
+    font-family: Muli,sans-serif;
+    
+}
+
+code{
+
+    font-weight: 300;
+    letter-spacing: .23px;
+    color: #626262;
+    font-size: 13px;
+    font-family: Muli,sans-serif;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 600px) {
+    .heading {
+        font-size: 0.8rem;
+        padding-left: 0.6rem;
+    }
+    .toogle {
+        margin-right: 0;
+        width: 10rem;
+        padding: 0.7rem;
+        font-size: 0.8rem;
+    }
+    /* .active {
+        margin-right: 1rem;
+    }
+    .normal {
+        margin-right: 1rem;
+    } */
+    .code {
+        height: 95.6%;
+    }
+    .submit {
+        width: 4rem;
+        height: 1.8rem;
+    }
+}

@@ -7,8 +7,13 @@ import classes from "./editor.module.css";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material.css";
 import "codemirror/theme/dracula.css";
+import "codemirror/theme/cobalt.css";
+import "codemirror/theme/mbo.css";
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 require("codemirror/mode/clike/clike");
 require("codemirror/mode/python/python");
+
+
 
 class Editor extends Component {
     state = {
@@ -50,16 +55,29 @@ int main() {
             this.setState({ mode: "python", lang: "python3" });
         }
     };
+
+    
+
+    
     render() {
         return (
             <>
                 <div className={classes.run}>
-                    <div className={classes.heading}>CodeScratcher</div>
+                    
                     <div>
+                        
+                        <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+                        
                         <button className={classes.submit} onClick={() => this.submitHandler()}>
                             Run
                         </button>
+                        <button className={classes.submit} >
+                            Submit
+                        </button>
+                        </ButtonGroup>
+                        
                     </div>
+                    
                     <div className={classes.toogle}>
                         <div
                             className={

@@ -6,13 +6,30 @@
     flex-direction: column;
     /* border: 2px solid red; */
 }
+.testcase{
+
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    flexWrap: wrap;
+    border-spacing: 1em;
+}
+
+.appBar{
+
+    position: relative;
+    
+}
 
 .label {
     font-family: "Montserrat", sans-serif;
     color: #000000;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    height: 4rem;
+    height: 3rem;
     font-size: 1.0rem;
     padding: 1rem 0 0 1rem;
     font-weight: 400;
@@ -22,7 +39,7 @@
 .input {
     width: 50%;
     font-size: 1.0rem;
-    height: 36%;
+    height: 30%;
     background-color: #494d6173;
     padding: 1rem 0 0 1rem;
     resize: none;
@@ -30,7 +47,7 @@
     color: aliceblue;
 }
 .show {
-    height: 6.4rem;
+    height: 6.5rem;
     background: linear-gradient(90deg, #342B4C, #7355be);
 }
 @media screen and (max-width: 600px) {
